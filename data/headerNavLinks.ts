@@ -6,7 +6,7 @@ const headerNavLinks = [
   { href: '/projects', title: 'Services' },
   { href: '/projects', title: 'Resources' },
   { href: '/projects', title: 'Testimonials' },
-  { href: '/about', title: 'About' },
+  { href: '/about', title: 'About', submenu: [{ href: '/about/our-mission', title: 'Our Mission' }] },
   { href: '/projects', title: 'Contact Us' },
 ]
 
