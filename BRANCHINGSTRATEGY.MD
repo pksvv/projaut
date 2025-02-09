@@ -22,6 +22,12 @@ We will use the following branches:
 Whenever starting a new feature or bug fix, create a new branch from `develop`.
 
 ```bash
+### 1. Create a Feature Branch
+Whenever starting a new feature or bug fix, create a new branch from `develop`.
+
+```bash
+git fetch origin            # Ensure you have the latest changes
+git checkout -b feature/new-feature origin/develop   # Create a new branch from develop
 git checkout develop       # Switch to develop branch
 git pull origin develop    # Get the latest changes
 git checkout -b feature/new-feature   # Create a new branch
