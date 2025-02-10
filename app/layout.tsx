@@ -94,16 +94,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
-      <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
+
+      <body className="min-h-screen text-black dark:text-white antialiased">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <SectionContainer>
-            <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-              <Header />
-              <main className="mb-auto">{children}</main>
-            </SearchProvider>
-            <Footer />
-          </SectionContainer>
+          <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
+            <div className="relative min-h-screen">
+              {/* Background Overlay to Blend Sections */}
+              <div className="absolute inset-0 bg-cover bg-repeat bg-center opacity-20"></div>
+
+              {/* Main Content */}
+              <div className="relative z-10">
+                <Header />
+                <SectionContainer>
+                  <main className="mb-auto">{children}</main>
+                </SectionContainer>
+                <Footer />
+              </div>
+            </div>
+          </SearchProvider>
         </ThemeProviders>
       </body>
     </html>
