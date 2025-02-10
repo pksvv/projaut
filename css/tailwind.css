@@ -58,3 +58,9 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+body {
+  background-image: url('/static/images/cover2.jpg'); /* Update the path */
+  background-repeat: repeat;
+  background-position: center;
+}

@@ -1,0 +1,191 @@
+.
+├── BRANCHINGSTRATEGY.MD
+├── FORK.MD
+├── LICENSE
+├── README.md
+├── app
+│   ├── Main.tsx
+│   ├── about
+│   │   └── page.tsx
+│   ├── blog
+│   │   ├── [...slug]
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── projects
+│   │   └── page.tsx
+│   ├── robots.ts
+│   ├── seo.tsx
+│   ├── sitemap.ts
+│   ├── tag-data.json
+│   ├── tags
+│   │   ├── [tag]
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   └── theme-providers.tsx
+├── components
+│   ├── CTAPopup.tsx
+│   ├── Card.tsx
+│   ├── Comments.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Image.tsx
+│   ├── LayoutWrapper.tsx
+│   ├── Link.tsx
+│   ├── MDXComponents.tsx
+│   ├── MobileNav.tsx
+│   ├── PageTitle.tsx
+│   ├── ScrollTopAndComment.tsx
+│   ├── SearchButton.tsx
+│   ├── SectionContainer.tsx
+│   ├── TableWrapper.tsx
+│   ├── Tag.tsx
+│   ├── ThemeSwitch.tsx
+│   ├── WebStory.tsx
+│   ├── skills.tsx
+│   └── social-icons
+│       ├── icons.tsx
+│       └── index.tsx
+├── contentlayer.config.ts
+├── css
+│   ├── prism.css
+│   └── tailwind.css
+├── cta_captured_data.json
+├── data
+│   ├── authors
+│   │   ├── default.mdx
+│   │   └── sparrowhawk.mdx
+│   ├── blog
+│   │   ├── code-sample.mdx
+│   │   ├── deriving-ols-estimator.mdx
+│   │   ├── github-markdown-guide.mdx
+│   │   ├── guide-to-using-images-in-nextjs.mdx
+│   │   ├── introducing-tailwind-nextjs-starter-blog.mdx
+│   │   ├── my-fancy-title.mdx
+│   │   ├── nested-route
+│   │   │   └── introducing-multi-part-posts-with-nested-routing.mdx
+│   │   ├── new-features-in-v1.mdx
+│   │   ├── pictures-of-canada.mdx
+│   │   ├── release-of-tailwind-nextjs-starter-blog-v2.0.mdx
+│   │   ├── the-time-machine.mdx
+│   │   └── webstory-example.mdx
+│   ├── headerNavLinks.ts
+│   ├── logo.svg
+│   ├── projectsData.ts
+│   ├── references-data.bib
+│   └── siteMetadata.js
+├── eslint.config.mjs
+├── faq
+│   ├── custom-mdx-component.md
+│   ├── customize-kbar-search.md
+│   └── deploy-with-docker.md
+├── jsconfig.json
+├── layouts
+│   ├── AuthorLayout.tsx
+│   ├── ListLayout.tsx
+│   ├── ListLayoutWithTags.tsx
+│   ├── PostBanner.tsx
+│   ├── PostLayout.tsx
+│   └── PostSimple.tsx
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── prettier.config.js
+├── public
+│   ├── feed.xml
+│   ├── search.json
+│   ├── static
+│   │   ├── favicons
+│   │   │   ├── android-chrome-96x96.png
+│   │   │   ├── apple-touch-icon.png
+│   │   │   ├── browserconfig.xml
+│   │   │   ├── favicon-16x16.png
+│   │   │   ├── favicon-32x32.png
+│   │   │   ├── favicon.ico
+│   │   │   ├── gcp.svg
+│   │   │   ├── mstile-150x150.png
+│   │   │   ├── neo4j.svg
+│   │   │   ├── nextjs.svg
+│   │   │   ├── python.svg
+│   │   │   ├── pytorch.svg
+│   │   │   ├── safari-pinned-tab.svg
+│   │   │   ├── site.webmanifest
+│   │   │   ├── tailwind.svg
+│   │   │   ├── tensorflow.svg
+│   │   │   ├── typescript.svg
+│   │   │   ├── vg.svg
+│   │   │   ├── vg2.svg
+│   │   │   ├── vg3.svg
+│   │   │   ├── vg4.svg
+│   │   │   └── vg_hexagon.svg
+│   │   └── images
+│   │       ├── avatar.png
+│   │       ├── canada
+│   │       │   ├── lake.jpg
+│   │       │   ├── maple.jpg
+│   │       │   ├── mountains.jpg
+│   │       │   └── toronto.jpg
+│   │       ├── cover.jpg
+│   │       ├── cover2.jpg
+│   │       ├── github-traffic.png
+│   │       ├── google.png
+│   │       ├── logo.png
+│   │       ├── ocean.jpeg
+│   │       ├── profile.jpg
+│   │       ├── sparrowhawk-avatar.jpg
+│   │       ├── time-machine.jpg
+│   │       └── twitter-card.png
+│   └── tags
+│       ├── book
+│       │   └── feed.xml
+│       ├── canada
+│       │   └── feed.xml
+│       ├── code
+│       │   └── feed.xml
+│       ├── example
+│       │   └── feed.xml
+│       ├── feature
+│       │   └── feed.xml
+│       ├── features
+│       │   └── feed.xml
+│       ├── github
+│       │   └── feed.xml
+│       ├── guide
+│       │   └── feed.xml
+│       ├── holiday
+│       │   └── feed.xml
+│       ├── images
+│       │   └── feed.xml
+│       ├── markdown
+│       │   └── feed.xml
+│       ├── math
+│       │   └── feed.xml
+│       ├── multi-author
+│       │   └── feed.xml
+│       ├── next-js
+│       │   └── feed.xml
+│       ├── ols
+│       │   └── feed.xml
+│       ├── reflection
+│       │   └── feed.xml
+│       ├── tailwind
+│       │   └── feed.xml
+│       ├── web-story
+│       │   └── feed.xml
+│       └── writings
+│           └── feed.xml
+├── scripts
+│   ├── postbuild.mjs
+│   └── rss.mjs
+├── tailwind.config.js
+├── tree
+├── tsconfig.json
+└── utils
+    └── logger.ts
+
+44 directories, 145 files
